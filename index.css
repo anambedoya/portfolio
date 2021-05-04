@@ -1,10 +1,18 @@
-body {
-    background-image: url('images/background.jpg');
-    background-attachment: fixed;
-}
-
 li {
     display: inline;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 20px
+}
+
+a {
+    text-decoration: none;
+}
+
+.home {
+    height: 900px;
 }
 
 .menu {
