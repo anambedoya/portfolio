@@ -8,29 +8,32 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
     <link rel="stylesheet" href="./index.css"> 
-    <title>Ana María Bedoya - Portfolio</title>
+    <title>Ana Maria Bedoya - Portfolio</title>
 </head>
 <body>
     <div class="headerSection">
         <ul class="menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="menuItem"><a class="menuItemText" href="#home">Home</a></li>
+            <li class="menuItem"><a class="menuItemText" href="#about">About</a></li>
+            <li class="menuItem"><a class="menuItemText" href="#projects">Projects</a></li>
+            <li class="menuItem"><a class="menuItemText" href="#contact">Contact</a></li>
         </ul>
         <input type="checkbox" class="checkbox" id="checkbox">
         <label for="checkbox" class="label">
-            <i class="fas fa-moon"></i>
             <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
             <div class="ball"></div>
         </label>
     </div>
 
     <div id="#home" class="home">
-        <h1>Hi, I'm Ana María</h1>
+        <h1 class="title">Ana Maria Bedoya</h1>
+        <h2>Hi, I'm Ana. A software engineer who loves front-end</h2>
+        <h2>and learning new technologies</h2>
+        <button>GET CV</button>
     </div>
 
-    <div id="about">
+    <div id="about" class="aboutSection">
         <h2>About</h2>
         <p>
             I'm a software developer with experience as a full-stack developer but highly interested to focus in the front-end. 
@@ -41,11 +44,40 @@
         <h3>Tech stack</h3>
         <img src="./images/react.svg" alt="React icon" />
         <img src="./images/rails.png" alt="Ruby on Rails icon" />
+        <h3>Work experience</h3>
+        <b>Developer Analyst in Celerik | August 2019 - November 2020</b>
+        <b>Responsabilites</b>
+        <ul>
+            <li>Creation of applications for clients companys using ReactJS, Redux and MaterialUI</li>
+            <li>Development of REST APIs in .NET MVC using C#</li>
+            <li>Creation of views using Razor and jQuery</li>
+            <li>Add front-end features to the Angular application according to the design</li>
+        </ul>
+        <b>Software Developer in Prestti | November 2020 - April 2021</b>
+        <b>Responsabilites</b>
+        <ul>
+            <li>Creation of new features to the company's core application built in ReactJS</li>
+            <li>Leader of a new company's project implemented in ReactJS, responsible of adding new features and bring maintenaince to the page</li>
+        </ul>
+        <b>Software Engineer in Spectrio | April 2021 - Present</b>
+        <b>Responsabilites</b>
+        <ul>
+            <li>Creation of new features to a company's application built in Angular</li>
+        </ul>
     </div>
 
     <div id="projects">
         <h2>Projects</h2>
         <p>I'm a big believer that you learn by doing, so here are some projects that I've done in my free time.</p>
+        <div class="card">
+            <div class="container">
+                <h4>Airbnb Clone</h4>
+                <p>Final project made for the RoR GAP bootcamp which consists on a minimal vacation rental service app where the users
+                with no need of login can see properties uploaded by a host and they can make a reservation.</p>
+                <a href="https://github.com/anambedoya/airbnb-clone">View source code</a>
+                <a href="http://gapairbnbclone.herokuapp.com/">See it live</a>
+            </div>
+        </div>
     </div>
 
     <div id="contact">

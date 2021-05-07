@@ -1,15 +1,23 @@
-li {
-    display: inline;
+a:visited {
+    color: black;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 20px;
+    margin: 40px;
     transition: background 0.2s linear;
 }
 
 body.dark {
     background-color: #292C35;
+}
+
+body.dark a {
+    color: #fff;
+}
+
+body.dark b {
+    color: #fff;
 }
 
 body.dark h1 {
@@ -21,6 +29,14 @@ body.dark h2 {
 }
 
 body.dark h3 {
+    color: #fff;
+}
+
+body.dark li {
+    color: #fff;
+}
+
+body.dark ul {
     color: #fff;
 }
 
@@ -37,15 +53,28 @@ a {
     border-radius: 50%;
     position: absolute;
     top: 6px;
-    left: 2px;
+    left: 8px;
     height: 22px;
     width: 22px; 
     transition: transform 0.2s linear;
 }
 
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 2px 16px;
+}
+
 .checkbox {
     opacity: 0;
-    position: absolute;
 }
 
 .checkbox:checked + .label .ball {
@@ -64,6 +93,12 @@ a {
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
+    justify-content: end;
+    height: 80px;
+}
+
+.home {
+    height: 850px;
 }
 
 .label {
@@ -78,13 +113,22 @@ a {
     width: 50px;
 }
 
-.home {
-    height: 900px;
-}
-
 .menu {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0px;
+}
+
+.menuItem {
+    display: inline;
+}
+
+.menuItemText {
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+.title {
+    padding-top: 225px;
 }
 
