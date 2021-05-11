@@ -32,6 +32,10 @@ body.dark h3 {
     color: #fff;
 }
 
+body.dark h4 {
+    color: #fff;
+}
+
 body.dark li {
     color: #fff;
 }
@@ -57,6 +61,12 @@ a {
     height: 22px;
     width: 22px; 
     transition: transform 0.2s linear;
+}
+
+.button {
+    background-color: #102A43;
+    border-radius: 20%;
+    color: #fff;
 }
 
 .card {
