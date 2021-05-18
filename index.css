@@ -73,6 +73,8 @@ a {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 40%;
+    display: flex;
+    flex-direction: row;
 }
 
 .card:hover {
@@ -103,12 +105,18 @@ a {
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
-    justify-content: end;
+    justify-content: flex-end;
     height: 80px;
 }
 
 .home {
-    height: 850px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 80px;
+}
+
+.homeImage {
+    margin-left: 250px;
 }
 
 .label {
@@ -138,7 +146,7 @@ a {
     padding-right: 20px;
 }
 
-.title {
+/* .title {
     padding-top: 225px;
-}
+} */
 

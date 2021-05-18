@@ -4,7 +4,7 @@ const spanishConfig = {
 }
 
 const englishConfig = {
-    intro: "Hi, I'm Ana. A software engineer who loves front-end:",
+    intro: "Hi, I'm Ana. A software engineer who loves front-end",
     introTwo: "and learning new technologies"
 }
 
