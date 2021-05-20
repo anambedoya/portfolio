@@ -11,13 +11,15 @@
     <title>Ana Maria Bedoya - Portfolio</title>
 </head>
 <body>
-    <div class="headerSection">
-        <ul class="menu">
-            <li class="menuItem"><a class="menuItemText" href="#home">Home</a></li>
-            <li class="menuItem"><a class="menuItemText" href="#about">About</a></li>
-            <li class="menuItem"><a class="menuItemText" href="#projects">Projects</a></li>
-            <li class="menuItem"><a class="menuItemText" href="#contact">Contact</a></li>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
+    </nav>
+    <!-- <div class="headerSection">
 
         <div>
             <input type="radio" id="english" name="radioLanguage" value="en">
@@ -33,10 +35,10 @@
             <i class="fas fa-moon"></i>
             <div class="ball"></div>
         </label>
-    </div>
+    </div> -->
 
     <div id="#home" class="home">
-        <div>
+        <div class="homeTitles">
             <h1 class="title">Ana Maria Bedoya</h1>
             <h2 data-i8n>Hi, I'm Ana. A software engineer who loves front-end and learning new technologies</h2>
             <button class="button">GET CV</button>
@@ -46,19 +48,23 @@
 
     <div id="about" class="aboutSection">
         <h2>About</h2>
-        <p>
+        <p class="subsectionTitle">
             I'm a software developer with experience as a full-stack developer but highly interested to focus in the front-end. 
             I'm a learning passionated person who has the capability to comunicate with people and also enjoy to work with a team. 
             I'm always looking to improve my skills as a software engineer and that's why I like to participate in different tech communities across my city.
         </p>
 
-        <h3>Tech stack</h3>
-        <img src="./images/react.svg" alt="React icon" />
-        <img src="./images/rails.png" alt="Ruby on Rails icon" />
-        <h3>Work experience</h3>
+        <h3 class="subsectionTitle">Tech stack</h3>
+        <div class="techSection">
+            <img src="./images/react.svg" alt="React icon" />
+            <img src="./images/rails.png" alt="Ruby on Rails icon" />
+            <!-- <img src="./images/htmlcssjs.png" alt="HTML, CSS and JS icon">
+            <img src="./images/net.png" alt=".NET icon">
+            <img src="./images/angular.svg" alt="Angular icon"> -->
+        </div>
+        <h3 class="subsectionTitle">Work experience</h3>
         <div class="workExperienceSection">
             <b>Developer Analyst in Celerik | August 2019 - November 2020</b>
-            <p>Responsabilites</p>
             <ul>
                 <li>Creation of applications for clients companys using ReactJS, Redux and MaterialUI</li>
                 <li>Development of REST APIs in .NET MVC using C#</li>
@@ -66,33 +72,31 @@
                 <li>Add front-end features to the Angular application according to the design</li>
             </ul>
             <b>Software Developer in Prestti | November 2020 - April 2021</b>
-            <p>Responsabilites</p>
             <ul>
                 <li>Creation of new features to the company's core application built in ReactJS</li>
                 <li>Leader of a new company's project implemented in ReactJS, responsible of adding new features and bring maintenaince to the page</li>
             </ul>
             <b>Software Engineer in Spectrio | April 2021 - Present</b>
-            <p>Responsabilites</p>
             <ul>
                 <li>Creation of new features to a company's application built in Angular</li>
             </ul>
         </div>
     </div>
 
-    <div id="projects">
-        <h2>Projects</h2>
-        <p>I'm a big believer that you learn by doing, so here are some projects that I've done in my free time.</p>
+    <div id="projects" class="projects">
+        <h2 class="subsectionTitle">Projects</h2>
+        <p class="subsectionTitle"> I'm a big believer that you learn by doing, so here are some projects that I've done in my free time.</p>
         <div class="card">
             <div class="container">
                 <h4>Airbnb Clone</h4>
-                <p>Final project made for the RoR GAP bootcamp which consists on a minimal vacation rental service app where the users
-                with no need of login can see properties uploaded by a host and they can make a reservation.</p>
+                <p>Minimal vacation rental service app where the users with no need of login can see properties uploaded by 
+                a host and they can make a reservation.</p>
                 <p>Technologies: RoR, Bootstrap</p>
                 <a href="https://github.com/anambedoya/airbnb-clone" target="_blank">View source code</a>
                 <a href="http://gapairbnbclone.herokuapp.com/" target="_blank">See it live</a>
             </div>
             <div class="container">
-                <h4>Gif App</h4>
+                <h4>Gifs App</h4>
                 <p>Project to browse gifs according to some entered term</p>
                 <p>Technologies: Angular</p>
                 <a href="https://github.com/anambedoya/gifs-app" target="_blank">View source code</a>
@@ -100,8 +104,11 @@
         </div>
     </div>
 
-    <div id="contact">
+    <div id="contact" class="contact">
         <h2>Contact</h2>
+        <p class="subsectionTitle">Feel free to mail me or send me a message to LinkedIn if you liked what you saw</p>
+        <a href="anabedoya1997@gmail.com">anabedoya1997@gmail.com</a>
+        <a href="https://www.linkedin.com/in/anambedoya/" target="_blank">LinkedIn</a>
     </div>
 
     <script src="./script.js"></script>
