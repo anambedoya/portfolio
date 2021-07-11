@@ -1,39 +1,56 @@
-const spanishConfig = {
-    intro: "Hola, soy Ana. Una desarrolladora que ama el front-end",
-    introTwo: "y aprender nuevas tecnologías"
+/*==================== MENU SHOW Y HIDDEN ====================*/
+const navMenu = document.getElementById('nav-menu');
+const navToggle = document.getElementById('nav-toggle');
+const navClose = document.getElementById('nav-close');
+
+/*===== MENU SHOW =====*/
+/* Validate if constant exists */
+if(navToggle){
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.add('show-menu');
+    })
 }
 
-const englishConfig = {
-    intro: "Hi, I'm Ana. A software engineer who loves front-end",
-    introTwo: "and learning new technologies"
+/*===== MENU HIDDEN =====*/
+/* Validate if constant exists */
+if(navClose){
+    navClose.addEventListener('click', () => {
+        navMenu.classList.remove('show-menu');
+    })
 }
 
-const checkbox = document.getElementById('checkbox');
+/*==================== REMOVE MENU MOBILE ====================*/
+const navLink = document.querySelectorAll('.nav__link');
 
-checkbox.addEventListener('change', () => {
-    document.body.classList.toggle('dark');
-});
-
-const radioButtonEnglish = document.getElementById('english');
-const radioButtonSpanish = document.getElementById('spanish');
-
-radioButtonEnglish.addEventListener('change', () => {
-    console.log('English');
-    changeLanguage(englishConfig);
-});
-
-radioButtonSpanish.addEventListener('change', () => {
-    console.log('Spanish');
-    changeLanguage(spanishConfig);
-});
-
-function changeLanguage (selectedLanguage = englishConfig) {
-    const replaceText = (el) => {
-        const key = el.innerText;
-        el.innerText = selectedLanguage[key] || key;
-    }
-    
-    const elements = document.querySelectorAll("[data-i8n]");
-    elements.forEach(el => replaceText(el));
-    console.log(elements);
+function linkAction() {
+    const navMenu = document.getElementById('nav-menu');
+    navMenu.classList.remove('show-menu');
 }
+
+navLink.forEach(n => n.addEventListener(('click'), linkAction));
+
+/*==================== ACCORDION SKILLS ====================*/
+
+
+/*==================== QUALIFICATION TABS ====================*/
+
+
+/*==================== SERVICES MODAL ====================*/
+
+
+/*==================== PORTFOLIO SWIPER  ====================*/
+
+
+/*==================== TESTIMONIAL ====================*/
+
+
+/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+
+
+/*==================== CHANGE BACKGROUND HEADER ====================*/ 
+
+
+/*==================== SHOW SCROLL UP ====================*/ 
+
+
+/*==================== DARK LIGHT THEME ====================*/ 
