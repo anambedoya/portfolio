@@ -515,8 +515,40 @@ img {
 /* Active Modal */
 
 
-/*==================== PORTFOLIO ====================*/
+/*==================== PROJECTS ====================*/
+.projects__container {
+    overflow: initial;
+}
 
+.projects__content {
+    padding: 0 1.5rem;
+}
+
+.projects__img {
+    width: 265px;
+    border-radius: .5rem;
+    justify-self: center;
+}
+
+.projects__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.projects__description {
+    margin-bottom: var(--mb-0-75);
+}
+
+.projects__button:hover .button__icon {
+    transform: translateX(.25rem);
+}
+
+/* .swiper-button-prev::after,
+.swiper-button-next::after {
+    content: ''
+} */
+
+/*  TODO: Style for arrows icon */
 
 /*==================== PROJECT IN MIND ====================*/
 
