@@ -23,6 +23,8 @@
         <link rel="stylesheet" href="assets/css/styles.css">
 
         <title>Ana Maria Bedoya - Portfolio</title>
+
+        <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
     </head>
     <body>
         <!--==================== HEADER ====================-->
@@ -104,9 +106,9 @@
                         </div>
 
                         <div class="home__data">
-                            <h1 class="home__title">Hi, I'm Ana Maria</h1>
+                            <h1 data-i18n="home.title" class="home__title">Hi, I'm Ana Maria</h1>
                             <h3 class="home__subtitle">Front-end Developer</h3>
-                            <p class="home__description">
+                            <p data-i18n="home.description" class="home__description">
                                 I have worked with ReactJS, .NET, Angular and I can't wait to learn more!
                             </p>
                             <a href="#contact" class="button button--flex">
@@ -156,7 +158,7 @@
                         </div>
 
                         <div class="about__buttons">
-                            <a download href="assets/pdf/AnaMariaBedoya-CV.pdf" class="button button--flex">
+                            <a download href="assets/pdf/AnaMariaBedoya-CV.pdf" class="button button--flex" target="_blank">
                                 Download CV<i class="uit uit-download-alt button__icon"></i>
                             </a>
                         </div>
@@ -359,11 +361,11 @@
                     <div class="swiper-wrapper">
                         <!--==================== PROJECT 1 ==================== -->
                         <div class="projects__content grid swiper-slide">
-                            <img src="assets/images/portfolio1.jpg" alt="projects" class="projects__img">
+                            <img src="assets/images/project1.png" alt="projects" class="projects__img">
 
                             <div class="projects__data">
                                 <h3 class="projects__title">Airbnb Clone</h3>
-                                <p class="project__description">Project built for the GAP bootcamp</p>
+                                <p class="project__description">Project built for the Ruby on Rails bootcamp by GAP</p>
                                 <a href="http://gapairbnbclone.herokuapp.com/" 
                                    target="_blank" 
                                    class="button button--flex button--small projects__button">
@@ -381,11 +383,11 @@
 
                         <!--==================== PROJECT 2 ==================== -->
                         <div class="projects__content grid swiper-slide">
-                            <img src="assets/images/portfolio2.jpg" alt="projects" class="projects__img">
+                            <img src="assets/images/project2.png" alt="projects" class="projects__img">
 
                             <div class="projects__data">
                                 <h3 class="projects__title">Gifs App</h3>
-                                <p class="project__description">Project built to tackle Angular knowledge</p>
+                                <p class="project__description">Project built to tackle Angular knowledge from Udemy's course</p>
                                 <a href="#" class="button button--flex button--small projects__button">
                                     Demo
                                     <i class="uit uit-angle-double-right button__icon"></i>
@@ -405,8 +407,49 @@
 
                             <div class="projects__data">
                                 <h3 class="projects__title">Countries App</h3>
-                                <p class="project__description">Project built to tackle Angular knowledge</p>
+                                <p class="project__description">Project built to tackle Angular knowledge from Udemy's coursee</p>
                                 <a href="#" class="button button--flex button--small projects__button">
+                                    Demo
+                                    <i class="uit uit-angle-double-right button__icon"></i>
+                                </a>
+                                <a href="https://github.com/anambedoya/countries-app" 
+                                   target="_blank" 
+                                   class="button button--flex button--small projects__button">
+                                    Code
+                                    <i class="uit uit-angle-double-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                         <!--==================== PROJECT 4 ==================== -->
+                         <div class="projects__content grid swiper-slide">
+                            <img src="assets/images/project4.png" alt="projects" class="projects__img">
+
+                            <div class="projects__data">
+                                <h3 class="projects__title">Heroes App</h3>
+                                <p class="project__description">Project built to tackle Angular knowledge from Udemy's course</p>
+                                <a href="#" class="button button--flex button--small projects__button">
+                                    Demo
+                                    <i class="uit uit-angle-double-right button__icon"></i>
+                                </a>
+                                <a href="https://github.com/anambedoya/heroes-app" 
+                                   target="_blank" 
+                                   class="button button--flex button--small projects__button">
+                                    Code
+                                    <i class="uit uit-angle-double-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <!--==================== PROJECT 5 ==================== -->
+                        <div class="projects__content grid swiper-slide">
+                            <img src="assets/images/project5.PNG" alt="projects" class="projects__img">
+
+                            <div class="projects__data">
+                                <h3 class="projects__title">Login App</h3>
+                                <p class="project__description">Project built to tackle Angular and some Node knowledge from Udemy's course</p>
+                                <a href="https://angular-node-auth-app.herokuapp.com/" class="button button--flex button--small projects__button" target="blank">
                                     Demo
                                     <i class="uit uit-angle-double-right button__icon"></i>
                                 </a>
@@ -515,6 +558,7 @@
                 </div>
 
                 <p class="footer__copy">&#169; Bedimcode. All rights reserved</p>
+                <p class="footer__copy">&#169; <a style="color: inherit" href="https://iconos8.es/" target="_blank">Iconos8.</a> All rights reserved</p>
             </div>
             
         </footer>
