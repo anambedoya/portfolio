@@ -299,7 +299,7 @@ img {
 }
 
 .home__blob-img{
-    width: 238px;
+    width: 220px;
 }
 
 .home__data{
@@ -652,7 +652,7 @@ img {
 
 /*==================== FOOTER ====================*/
 .footer {
-    padding-top: 2rem;
+    padding-top: 10rem;
 }
 
 .footer__container {
@@ -696,7 +696,7 @@ img {
     font-size: var(--small-font-size);
     text-align: center;
     color: var(--text-color-light);
-    margin-top: var(--mb-3);
+    margin-top: var(--mb-1);
 }
 
 .footer__title,
