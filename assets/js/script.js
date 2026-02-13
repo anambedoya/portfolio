@@ -42,12 +42,37 @@ const resources = {
                 title: 'Skills',
                 subtitle: 'My technical level',
                 group1: {
-                    title: 'Frameworks/programming languages',
-                    years: '6 years'
+                    title: 'Frameworks/Programming languages',
+                    years: 'Experience by technology',
+                    items: {
+                        html: 'HTML - 6 years',
+                        css: 'CSS - 6 years',
+                        javascript: 'JavaScript - 6 years',
+                        typescript: 'TypeScript - 6 years',
+                        angular: 'Angular - 6 years',
+                        dotnet: '.NET Core - 6 years',
+                        react: 'ReactJS - 2 years',
+                        rails: 'Ruby on Rails - 1 year'
+                    }
                 },
                 group2: {
                     title: 'Other tools',
-                    years: '6 years'
+                    years: 'Experience by tool',
+                    items: {
+                        azure: 'Azure DevOps - 1 year',
+                        jira: 'Jira - 5 years',
+                        git: 'Git - 6 years',
+                        selenium: 'Selenium - 1 year'
+                    }
+                },
+                group3: {
+                    title: 'Languages',
+                    years: 'Language proficiency',
+                    items: {
+                        spanish: 'Spanish (Native)',
+                        english: 'English (Advanced)',
+                        french: 'French (Intermediate)'
+                    }
                 }
             },
             qualification: {
@@ -55,7 +80,8 @@ const resources = {
                 subtitle: 'My personal journey',
                 tabs: {
                     education: 'Education',
-                    work: 'Work'
+                    work: 'Work',
+                    courses: 'Courses'
                 },
                 education: {
                     degree: 'Software Engineer',
@@ -73,6 +99,18 @@ const resources = {
                     celerik: {
                         role: 'Full-stack Developer',
                         period: '2019 - 2020'
+                    }
+                },
+                courses: {
+                    french: {
+                        title: 'French Studies',
+                        school: 'BLI Canada, Montreal',
+                        period: 'Dec 2024 - Nov 2025 (break in Sep 2025 for English course)'
+                    },
+                    english: {
+                        title: 'English Course',
+                        school: 'BLI Canada, Montreal',
+                        period: 'Sep 2025'
                     }
                 }
             },
@@ -156,12 +194,37 @@ const resources = {
                 title: 'Habilidades',
                 subtitle: 'Mi nivel técnico',
                 group1: {
-                    title: 'Frameworks/lenguajes de programación',
-                    years: '6 años'
+                    title: 'Frameworks/Lenguajes de programación',
+                    years: 'Experiencia por tecnología',
+                    items: {
+                        html: 'HTML - 6 años',
+                        css: 'CSS - 6 años',
+                        javascript: 'JavaScript - 6 años',
+                        typescript: 'TypeScript - 6 años',
+                        angular: 'Angular - 6 años',
+                        dotnet: '.NET Core - 6 años',
+                        react: 'ReactJS - 2 años',
+                        rails: 'Ruby on Rails - 1 año'
+                    }
                 },
                 group2: {
                     title: 'Otras herramientas',
-                    years: '6 años'
+                    years: 'Experiencia por herramienta',
+                    items: {
+                        azure: 'Azure DevOps - 1 año',
+                        jira: 'Jira - 5 años',
+                        git: 'Git - 6 años',
+                        selenium: 'Selenium - 1 año'
+                    }
+                },
+                group3: {
+                    title: 'Idiomas',
+                    years: 'Nivel de idioma',
+                    items: {
+                        spanish: 'Español (Nativo)',
+                        english: 'Inglés (Avanzado)',
+                        french: 'Francés (Intermedio)'
+                    }
                 }
             },
             qualification: {
@@ -169,7 +232,8 @@ const resources = {
                 subtitle: 'Mi recorrido personal',
                 tabs: {
                     education: 'Educación',
-                    work: 'Experiencia'
+                    work: 'Experiencia',
+                    courses: 'Cursos'
                 },
                 education: {
                     degree: 'Ingeniera de Software',
@@ -187,6 +251,18 @@ const resources = {
                     celerik: {
                         role: 'Desarrolladora Full-Stack',
                         period: '2019 - 2020'
+                    }
+                },
+                courses: {
+                    french: {
+                        title: 'Estudios de francés',
+                        school: 'BLI Canada, Montreal',
+                        period: 'Dic 2024 - Nov 2025 (pausa en Sep 2025 para curso de inglés)'
+                    },
+                    english: {
+                        title: 'Curso de inglés',
+                        school: 'BLI Canada, Montreal',
+                        period: 'Sep 2025'
                     }
                 }
             },
@@ -270,12 +346,37 @@ const resources = {
                 title: 'Compétences',
                 subtitle: 'Mon niveau technique',
                 group1: {
-                    title: 'Frameworks/langages de programmation',
-                    years: '6 ans'
+                    title: 'Frameworks/Langages de programmation',
+                    years: 'Expérience par technologie',
+                    items: {
+                        html: 'HTML - 6 ans',
+                        css: 'CSS - 6 ans',
+                        javascript: 'JavaScript - 6 ans',
+                        typescript: 'TypeScript - 6 ans',
+                        angular: 'Angular - 6 ans',
+                        dotnet: '.NET Core - 6 ans',
+                        react: 'ReactJS - 2 ans',
+                        rails: 'Ruby on Rails - 1 an'
+                    }
                 },
                 group2: {
                     title: 'Autres outils',
-                    years: '6 ans'
+                    years: 'Expérience par outil',
+                    items: {
+                        azure: 'Azure DevOps - 1 an',
+                        jira: 'Jira - 5 ans',
+                        git: 'Git - 6 ans',
+                        selenium: 'Selenium - 1 an'
+                    }
+                },
+                group3: {
+                    title: 'Langues',
+                    years: 'Niveau de langue',
+                    items: {
+                        spanish: 'Espagnol (Natif)',
+                        english: 'Anglais (Avancé)',
+                        french: 'Français (Intermédiaire)'
+                    }
                 }
             },
             qualification: {
@@ -283,7 +384,8 @@ const resources = {
                 subtitle: 'Mon parcours personnel',
                 tabs: {
                     education: 'Études',
-                    work: 'Expérience'
+                    work: 'Expérience',
+                    courses: 'Cours'
                 },
                 education: {
                     degree: 'Ingénieure Logiciel',
@@ -301,6 +403,18 @@ const resources = {
                     celerik: {
                         role: 'Développeuse Full-Stack',
                         period: '2019 - 2020'
+                    }
+                },
+                courses: {
+                    french: {
+                        title: 'Études de français',
+                        school: 'BLI Canada, Montreal',
+                        period: "Déc 2024 - Nov 2025 (pause en Sep 2025 pour un cours d'anglais)"
+                    },
+                    english: {
+                        title: "Cours d'anglais",
+                        school: 'BLI Canada, Montreal',
+                        period: 'Sep 2025'
                     }
                 }
             },
