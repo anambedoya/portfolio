@@ -43,11 +43,11 @@ const resources = {
                 subtitle: 'My technical level',
                 group1: {
                     title: 'Frameworks/programming languages',
-                    years: '3 years'
+                    years: '6 years'
                 },
                 group2: {
                     title: 'Other tools',
-                    years: '3 years'
+                    years: '6 years'
                 }
             },
             qualification: {
@@ -157,11 +157,11 @@ const resources = {
                 subtitle: 'Mi nivel técnico',
                 group1: {
                     title: 'Frameworks/lenguajes de programación',
-                    years: '3 años'
+                    years: '6 años'
                 },
                 group2: {
                     title: 'Otras herramientas',
-                    years: '3 años'
+                    years: '6 años'
                 }
             },
             qualification: {
@@ -271,11 +271,11 @@ const resources = {
                 subtitle: 'Mon niveau technique',
                 group1: {
                     title: 'Frameworks/langages de programmation',
-                    years: '3 ans'
+                    years: '6 ans'
                 },
                 group2: {
                     title: 'Autres outils',
-                    years: '3 ans'
+                    years: '6 ans'
                 }
             },
             qualification: {
