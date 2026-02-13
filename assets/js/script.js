@@ -2,6 +2,355 @@
 const navMenu = document.getElementById('nav-menu');
 const navToggle = document.getElementById('nav-toggle');
 const navClose = document.getElementById('nav-close');
+const languageSelect = document.getElementById('language-select');
+
+const supportedLanguages = ['en', 'es', 'fr'];
+const resources = {
+    en: {
+        translation: {
+            meta: {
+                title: 'Ana Maria Bedoya - Portfolio'
+            },
+            nav: {
+                home: 'Home',
+                about: 'About',
+                skills: 'Skills',
+                projects: 'Projects'
+            },
+            home: {
+                title: "Hi, I'm Ana Maria",
+                subtitle: 'Full-Stack Developer',
+                description: 'My main tech stack is: .NET and Angular. What I like the most about working on tech is learning new things every day, facing new challenges, and helping my team bring their best. I like to be part of software communities in my city that seek the empowerment and inclusion of women in tech.',
+                scroll: 'Scroll down'
+            },
+            about: {
+                title: 'About me',
+                subtitle: 'My introduction',
+                description: 'I have experience delivering high-quality software products developed under agile methodologies.',
+                info: {
+                    years: 'Years',
+                    experience: 'experience',
+                    completed: 'Completed',
+                    projects: 'projects',
+                    companies: 'Companies',
+                    worked: 'worked'
+                },
+                downloadCv: 'Download CV'
+            },
+            skills: {
+                title: 'Skills',
+                subtitle: 'My technical level',
+                group1: {
+                    title: 'Frameworks/programming languages',
+                    years: '3 years'
+                },
+                group2: {
+                    title: 'Other tools',
+                    years: '3 years'
+                }
+            },
+            qualification: {
+                title: 'Qualification',
+                subtitle: 'My personal journey',
+                tabs: {
+                    education: 'Education',
+                    work: 'Work'
+                },
+                education: {
+                    degree: 'Software Engineer',
+                    period: '2015 - 2019'
+                },
+                work: {
+                    spectrio: {
+                        role: 'Software Engineer',
+                        period: '2021 - Present'
+                    },
+                    prestti: {
+                        role: 'Front-End Developer',
+                        period: '2020 - 2021'
+                    },
+                    celerik: {
+                        role: 'Full-stack Developer',
+                        period: '2019 - 2020'
+                    }
+                }
+            },
+            projects: {
+                title: 'Projects',
+                subtitle: 'I strongly believe you learn by doing, so here is some work that I have done to master new skills.',
+                demo: 'Demo',
+                code: 'Code',
+                items: {
+                    airbnb: {
+                        description: 'Project built for the Ruby on Rails bootcamp by GAP.'
+                    },
+                    gifs: {
+                        description: "Project built to strengthen Angular knowledge from Udemy's course."
+                    },
+                    countries: {
+                        description: "Project built to strengthen Angular knowledge from Udemy's course."
+                    },
+                    heroes: {
+                        description: "Project built to strengthen Angular knowledge from Udemy's course."
+                    },
+                    login: {
+                        description: "Project built to strengthen Angular and Node knowledge from Udemy's course."
+                    }
+                }
+            },
+            footer: {
+                rights: 'All rights reserved'
+            }
+        }
+    },
+    es: {
+        translation: {
+            meta: {
+                title: 'Ana Maria Bedoya - Portafolio'
+            },
+            nav: {
+                home: 'Inicio',
+                about: 'Sobre mí',
+                skills: 'Habilidades',
+                projects: 'Proyectos'
+            },
+            home: {
+                title: 'Hola, soy Ana Maria',
+                subtitle: 'Desarrolladora Full-Stack',
+                description: 'Mi stack tecnológico principal es .NET y Angular. Lo que más me gusta de trabajar en tecnología es aprender cosas nuevas cada día, enfrentar nuevos retos y ayudar a mi equipo a dar lo mejor. Me gusta participar en comunidades de software en mi ciudad que buscan el empoderamiento y la inclusión de las mujeres en tecnología.',
+                scroll: 'Desplázate hacia abajo'
+            },
+            about: {
+                title: 'Sobre mí',
+                subtitle: 'Mi introducción',
+                description: 'Tengo experiencia entregando productos de software de alta calidad desarrollados bajo metodologías ágiles.',
+                info: {
+                    years: 'Años',
+                    experience: 'de experiencia',
+                    completed: 'Proyectos',
+                    projects: 'completados',
+                    companies: 'Empresas',
+                    worked: 'donde trabajé'
+                },
+                downloadCv: 'Descargar CV'
+            },
+            skills: {
+                title: 'Habilidades',
+                subtitle: 'Mi nivel técnico',
+                group1: {
+                    title: 'Frameworks/lenguajes de programación',
+                    years: '3 años'
+                },
+                group2: {
+                    title: 'Otras herramientas',
+                    years: '3 años'
+                }
+            },
+            qualification: {
+                title: 'Trayectoria',
+                subtitle: 'Mi recorrido personal',
+                tabs: {
+                    education: 'Educación',
+                    work: 'Experiencia'
+                },
+                education: {
+                    degree: 'Ingeniera de Software',
+                    period: '2015 - 2019'
+                },
+                work: {
+                    spectrio: {
+                        role: 'Ingeniera de Software',
+                        period: '2021 - Actualidad'
+                    },
+                    prestti: {
+                        role: 'Desarrolladora Front-End',
+                        period: '2020 - 2021'
+                    },
+                    celerik: {
+                        role: 'Desarrolladora Full-Stack',
+                        period: '2019 - 2020'
+                    }
+                }
+            },
+            projects: {
+                title: 'Proyectos',
+                subtitle: 'Creo firmemente que se aprende haciendo, así que aquí hay algunos trabajos que he realizado para dominar nuevas habilidades.',
+                demo: 'Demo',
+                code: 'Código',
+                items: {
+                    airbnb: {
+                        description: 'Proyecto realizado para el bootcamp de Ruby on Rails de GAP.'
+                    },
+                    gifs: {
+                        description: "Proyecto creado para fortalecer conocimientos de Angular del curso de Udemy."
+                    },
+                    countries: {
+                        description: "Proyecto creado para fortalecer conocimientos de Angular del curso de Udemy."
+                    },
+                    heroes: {
+                        description: "Proyecto creado para fortalecer conocimientos de Angular del curso de Udemy."
+                    },
+                    login: {
+                        description: "Proyecto creado para fortalecer conocimientos de Angular y Node del curso de Udemy."
+                    }
+                }
+            },
+            footer: {
+                rights: 'Todos los derechos reservados'
+            }
+        }
+    },
+    fr: {
+        translation: {
+            meta: {
+                title: 'Ana Maria Bedoya - Portfolio'
+            },
+            nav: {
+                home: 'Accueil',
+                about: 'À propos',
+                skills: 'Compétences',
+                projects: 'Projets'
+            },
+            home: {
+                title: 'Bonjour, je suis Ana Maria',
+                subtitle: 'Développeuse Full-Stack',
+                description: "Ma stack principale est .NET et Angular. Ce que j'aime le plus dans la tech, c'est apprendre de nouvelles choses chaque jour, relever de nouveaux défis et aider mon équipe à donner le meilleur d'elle-même. J'aime faire partie des communautés logicielles de ma ville qui favorisent l'autonomisation et l'inclusion des femmes dans la tech.",
+                scroll: 'Faites défiler vers le bas'
+            },
+            about: {
+                title: 'À propos de moi',
+                subtitle: 'Mon introduction',
+                description: 'J’ai de l’expérience dans la livraison de produits logiciels de haute qualité développés selon des méthodologies agiles.',
+                info: {
+                    years: 'Années',
+                    experience: "d'expérience",
+                    completed: 'Projets',
+                    projects: 'terminés',
+                    companies: 'Entreprises',
+                    worked: 'où j’ai travaillé'
+                },
+                downloadCv: 'Télécharger le CV'
+            },
+            skills: {
+                title: 'Compétences',
+                subtitle: 'Mon niveau technique',
+                group1: {
+                    title: 'Frameworks/langages de programmation',
+                    years: '3 ans'
+                },
+                group2: {
+                    title: 'Autres outils',
+                    years: '3 ans'
+                }
+            },
+            qualification: {
+                title: 'Parcours',
+                subtitle: 'Mon parcours personnel',
+                tabs: {
+                    education: 'Études',
+                    work: 'Expérience'
+                },
+                education: {
+                    degree: 'Ingénieure Logiciel',
+                    period: '2015 - 2019'
+                },
+                work: {
+                    spectrio: {
+                        role: 'Ingénieure Logiciel',
+                        period: "2021 - Aujourd'hui"
+                    },
+                    prestti: {
+                        role: 'Développeuse Front-End',
+                        period: '2020 - 2021'
+                    },
+                    celerik: {
+                        role: 'Développeuse Full-Stack',
+                        period: '2019 - 2020'
+                    }
+                }
+            },
+            projects: {
+                title: 'Projets',
+                subtitle: "Je crois fermement qu'on apprend en faisant, voici donc quelques réalisations qui m'ont permis de maîtriser de nouvelles compétences.",
+                demo: 'Démo',
+                code: 'Code',
+                items: {
+                    airbnb: {
+                        description: 'Projet réalisé pour le bootcamp Ruby on Rails de GAP.'
+                    },
+                    gifs: {
+                        description: "Projet créé pour renforcer les connaissances Angular du cours Udemy."
+                    },
+                    countries: {
+                        description: "Projet créé pour renforcer les connaissances Angular du cours Udemy."
+                    },
+                    heroes: {
+                        description: "Projet créé pour renforcer les connaissances Angular du cours Udemy."
+                    },
+                    login: {
+                        description: "Projet créé pour renforcer les connaissances Angular et Node du cours Udemy."
+                    }
+                }
+            },
+            footer: {
+                rights: 'Tous droits réservés'
+            }
+        }
+    }
+};
+
+function applyTranslations() {
+    if (typeof i18next === 'undefined') {
+        return;
+    }
+
+    document.documentElement.lang = i18next.language;
+    document.title = i18next.t('meta.title');
+
+    document.querySelectorAll('[data-i18n]').forEach((element) => {
+        const key = element.getAttribute('data-i18n');
+        element.textContent = i18next.t(key);
+    });
+}
+
+function getPreferredLanguage() {
+    const selectedLanguage = localStorage.getItem('selected-language');
+    const browserLanguage = (navigator.language || 'en').slice(0, 2);
+    const language = selectedLanguage || browserLanguage;
+
+    return supportedLanguages.includes(language) ? language : 'en';
+}
+
+function changeLanguage(language) {
+    if (typeof i18next === 'undefined') {
+        return;
+    }
+
+    i18next.changeLanguage(language).then(() => {
+        localStorage.setItem('selected-language', language);
+        applyTranslations();
+    });
+}
+
+if (typeof i18next !== 'undefined') {
+    i18next.init({
+        lng: getPreferredLanguage(),
+        fallbackLng: 'en',
+        resources,
+        interpolation: {
+            escapeValue: false
+        }
+    }).then(() => {
+        applyTranslations();
+
+        if (languageSelect) {
+            languageSelect.value = i18next.language;
+            languageSelect.addEventListener('change', (event) => {
+                changeLanguage(event.target.value);
+            });
+        }
+    });
+}
 
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */

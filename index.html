@@ -34,22 +34,26 @@
                     <ul class="nav__list grid">
                         <li class="nav__item">
                             <a href="#home" class="nav__link active-link">
-                                <i class="uil uil-estate nav__icon"></i> Home
+                                <i class="uil uil-estate nav__icon"></i>
+                                <span data-i18n="nav.home">Home</span>
                             </a>
                         </li>
                         <li class="nav__item">
                             <a href="#about" class="nav__link">
-                                <i class="uil uil-user nav__icon"></i> About
+                                <i class="uil uil-user nav__icon"></i>
+                                <span data-i18n="nav.about">About</span>
                             </a>
                         </li>
                         <li class="nav__item">
                             <a href="#skills" class="nav__link">
-                                <i class="uil uil-file-alt nav__icon"></i> Skills
+                                <i class="uil uil-file-alt nav__icon"></i>
+                                <span data-i18n="nav.skills">Skills</span>
                             </a>
                         </li>
                         <li class="nav__item">
                             <a href="#projects" class="nav__link">
-                                <i class="uil uil-image nav__icon"></i> Projects
+                                <i class="uil uil-image nav__icon"></i>
+                                <span data-i18n="nav.projects">Projects</span>
                             </a>
                         </li>
                         <!-- <li class="nav__item">
@@ -61,6 +65,11 @@
                     <i class="uil uil-times nav__close" id="nav-close"></i>
                 </div>
                 <div class="nav__btns">
+                    <select id="language-select" class="language-select" aria-label="Language selector">
+                        <option value="en">EN</option>
+                        <option value="es">ES</option>
+                        <option value="fr">FR</option>
+                    </select>
                     <!-- Theme change button -->
                     <i class="uil uil-moon change-theme" id="theme-button"></i>
 
@@ -109,7 +118,7 @@
 
                         <div class="home__data">
                             <h1 data-i18n="home.title" class="home__title">Hi, I'm Ana Maria</h1>
-                            <h3 class="home__subtitle">Full-Stack Developer</h3>
+                            <h3 data-i18n="home.subtitle" class="home__subtitle">Full-Stack Developer</h3>
                             <p data-i18n="home.description" class="home__description">
                                 My main tech stack is: .NET and Angular. What I like the most about working on tech is to learn new things every day, facing new challenges and helping my team to bring their best. I like to be part of software comunities in my city that seek the empowerment and inclusion of women in tech.
                             </p>
@@ -122,7 +131,7 @@
                     <div class="home__scroll">
                         <a href="#about" class="home__scroll-button button--flex">
                             <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                            <span class="home__scroll-name">Scroll down</span>
+                            <span data-i18n="home.scroll" class="home__scroll-name">Scroll down</span>
                             <i class="uil uil-arrow-down home__scroll-arrow"></i>
                         </a>
                     </div>
@@ -131,37 +140,37 @@
 
             <!--==================== ABOUT ====================-->
             <section class="about section" id="about">
-                <h2 class="section__title">About me</h2>
-                <span class="section__subtitle">My introduction</span>
+                <h2 data-i18n="about.title" class="section__title">About me</h2>
+                <span data-i18n="about.subtitle" class="section__subtitle">My introduction</span>
 
                 <div class="about__container container grid">
                     <!-- <img src="assets/images/" alt="About myself" class="about__img"> -->
 
                     <div class="about__data">
-                        <p class="about__description">
+                        <p data-i18n="about.description" class="about__description">
                             I have experience delivering high quality software products developed under agile methodologies
                         </p>
 
                         <div class="about__info">
                             <div>
                                 <span class="about__info-title">03+</span>
-                                <span class="about__info-name">Years <br> experience</span>
+                                <span class="about__info-name"><span data-i18n="about.info.years">Years</span> <br> <span data-i18n="about.info.experience">experience</span></span>
                             </div>
 
                             <div>
                                 <span class="about__info-title">05+</span>
-                                <span class="about__info-name">Completed <br> projects</span>
+                                <span class="about__info-name"><span data-i18n="about.info.completed">Completed</span> <br> <span data-i18n="about.info.projects">projects</span></span>
                             </div>
 
                             <div>
                                 <span class="about__info-title">03+</span>
-                                <span class="about__info-name">Companies <br> worked</span>
+                                <span class="about__info-name"><span data-i18n="about.info.companies">Companies</span> <br> <span data-i18n="about.info.worked">worked</span></span>
                             </div>
                         </div>
 
                         <div class="about__buttons">
                             <a download href="assets/pdf/AnaMariaBedoya-CV.pdf" class="button button--flex" target="_blank">
-                                Download CV<i class="uit uit-download-alt button__icon"></i>
+                                <span data-i18n="about.downloadCv">Download CV</span><i class="uit uit-download-alt button__icon"></i>
                             </a>
                         </div>
                     </div>
@@ -170,8 +179,8 @@
 
             <!--==================== SKILLS ====================-->
             <section class="skills section" id="skills">
-                <h2 class="section__title">Skills</h2>
-                <span class="section__subtitle">My technical level</span>
+                <h2 data-i18n="skills.title" class="section__title">Skills</h2>
+                <span data-i18n="skills.subtitle" class="section__subtitle">My technical level</span>
 
                 <div class="skills_container container grid">
                     <div>
@@ -181,8 +190,8 @@
                                 <i class="lni lni-code-alt skills__icon"></i>
 
                                 <div>
-                                    <h1 class="skills__title">Frameworks/programming languages</h1>
-                                    <span class="skills__subtitle">3 years</span>
+                                    <h1 data-i18n="skills.group1.title" class="skills__title">Frameworks/programming languages</h1>
+                                    <span data-i18n="skills.group1.years" class="skills__subtitle">3 years</span>
                                 </div>
                                 
                             </div>
@@ -226,8 +235,8 @@
                                 <i class="lni lni-database skills__icon"></i>
 
                                 <div>
-                                    <h1 class="skills__title">Other tools</h1>
-                                    <span class="skills__subtitle">3 years</span>
+                                    <h1 data-i18n="skills.group2.title" class="skills__title">Other tools</h1>
+                                    <span data-i18n="skills.group2.years" class="skills__subtitle">3 years</span>
                                 </div>
                             </div>
 
@@ -252,19 +261,19 @@
 
             <!--==================== QUALIFICATION ====================-->
             <section class="qualification section">
-                <h2 class="section__title">Qualification</h2>
-                <span class="section__subtitle">My personal journey</span>
+                <h2 data-i18n="qualification.title" class="section__title">Qualification</h2>
+                <span data-i18n="qualification.subtitle" class="section__subtitle">My personal journey</span>
 
                 <div class="qualification__container container">
                     <div class="qualification__tabs">
                         <div class="qualification__button button--flex qualification__active" data-target='#education'>
                             <i class="lni lni-graduation qualification__icon"></i>
-                            Education
+                            <span data-i18n="qualification.tabs.education">Education</span>
                         </div>
                         
                         <div class="qualification__button button--flex" data-target='#work'>
                             <i class="lni lni-briefcase qualification__icon"></i>
-                            Work
+                            <span data-i18n="qualification.tabs.work">Work</span>
                         </div>
                     </div>
 
@@ -274,11 +283,11 @@
                             <!--==================== QUALIFICATION 1 ====================-->
                             <div class="qualification__data">
                                 <div>
-                                    <h3 class="qualification__title">Software Engineer</h3>
+                                    <h3 data-i18n="qualification.education.degree" class="qualification__title">Software Engineer</h3>
                                     <span class="qualification__title">EAFIT University</span>
                                     <div class="qualification__calendar">
                                         <i class="uit uit-calender"></i>
-                                        2015 - 2019
+                                        <span data-i18n="qualification.education.period">2015 - 2019</span>
                                     </div>
                                 </div>
 
@@ -296,11 +305,11 @@
                             <!--==================== QUALIFICATION 1 ====================-->
                             <div class="qualification__data">
                                 <div>
-                                    <h3 class="qualification__title">Software Engineer</h3>
+                                    <h3 data-i18n="qualification.work.spectrio.role" class="qualification__title">Software Engineer</h3>
                                     <span class="qualification__title">Spectrio</span>
                                     <div class="qualification__calendar">
                                         <i class="uit uit-calender"></i>
-                                        2021 - Present
+                                        <span data-i18n="qualification.work.spectrio.period">2021 - Present</span>
                                     </div>
                                 </div>
 
@@ -321,11 +330,11 @@
                                 </div>
 
                                 <div>
-                                    <h3 class="qualification__title">Front-End Developer</h3>
+                                    <h3 data-i18n="qualification.work.prestti.role" class="qualification__title">Front-End Developer</h3>
                                     <span class="qualification__title">Prestti</span>
                                     <div class="qualification__calendar">
                                         <i class="uit uit-calender"></i>
-                                        2020 - 2021
+                                        <span data-i18n="qualification.work.prestti.period">2020 - 2021</span>
                                     </div>
                                 </div>
                             </div>
@@ -334,11 +343,11 @@
                             <div class="qualification__data">
 
                                 <div>
-                                    <h3 class="qualification__title">Full-stack Developer</h3>
+                                    <h3 data-i18n="qualification.work.celerik.role" class="qualification__title">Full-stack Developer</h3>
                                     <span class="qualification__title">Celerik</span>
                                     <div class="qualification__calendar">
                                         <i class="uit uit-calender"></i>
-                                        2019 - 2020
+                                        <span data-i18n="qualification.work.celerik.period">2019 - 2020</span>
                                     </div>
                                 </div>
 
@@ -355,8 +364,8 @@
 
             <!--==================== PROJECTS ====================-->
             <section class="projects section" id="projects">
-                <h2 class="section__title">Projects</h2>
-                <span class="section__subtitle">I'm a big believer that you learn by doing, so here is some work 
+                <h2 data-i18n="projects.title" class="section__title">Projects</h2>
+                <span data-i18n="projects.subtitle" class="section__subtitle">I'm a big believer that you learn by doing, so here is some work 
                     that I have done to master new skills
                 </span>
 
@@ -368,17 +377,17 @@
 
                             <div class="projects__data">
                                 <h3 class="projects__title">Airbnb Clone</h3>
-                                <p class="project__description">Project built for the Ruby on Rails bootcamp by GAP</p>
+                                <p data-i18n="projects.items.airbnb.description" class="project__description">Project built for the Ruby on Rails bootcamp by GAP</p>
                                 <a href="http://gapairbnbclone.herokuapp.com/" 
                                    target="_blank" 
                                    class="button button--flex button--small projects__button">
-                                    Demo
+                                    <span data-i18n="projects.demo">Demo</span>
                                     <i class="uit uit-angle-double-right button__icon"></i>
                                 </a>
                                 <a href="https://github.com/anambedoya/airbnb-clone" 
                                    target="_blank" 
                                    class="button button--flex button--small projects__button">
-                                    Code
+                                    <span data-i18n="projects.code">Code</span>
                                     <i class="uit uit-angle-double-right button__icon"></i>
                                 </a>
                             </div>
@@ -390,15 +399,15 @@
 
                             <div class="projects__data">
                                 <h3 class="projects__title">Gifs App</h3>
-                                <p class="project__description">Project built to tackle Angular knowledge from Udemy's course</p>
+                                <p data-i18n="projects.items.gifs.description" class="project__description">Project built to tackle Angular knowledge from Udemy's course</p>
                                 <a href="#" class="button button--flex button--small projects__button">
-                                    Demo
+                                    <span data-i18n="projects.demo">Demo</span>
                                     <i class="uit uit-angle-double-right button__icon"></i>
                                 </a>
                                 <a href="https://github.com/anambedoya/gifs-app" 
                                    target="_blank" 
                                    class="button button--flex button--small projects__button">
-                                    Code
+                                    <span data-i18n="projects.code">Code</span>
                                     <i class="uit uit-angle-double-right button__icon"></i>
                                 </a>
                             </div>
@@ -410,15 +419,15 @@
 
                             <div class="projects__data">
                                 <h3 class="projects__title">Countries App</h3>
-                                <p class="project__description">Project built to tackle Angular knowledge from Udemy's coursee</p>
+                                <p data-i18n="projects.items.countries.description" class="project__description">Project built to tackle Angular knowledge from Udemy's coursee</p>
                                 <a href="#" class="button button--flex button--small projects__button">
-                                    Demo
+                                    <span data-i18n="projects.demo">Demo</span>
                                     <i class="uit uit-angle-double-right button__icon"></i>
                                 </a>
                                 <a href="https://github.com/anambedoya/countries-app" 
                                    target="_blank" 
                                    class="button button--flex button--small projects__button">
-                                    Code
+                                    <span data-i18n="projects.code">Code</span>
                                     <i class="uit uit-angle-double-right button__icon"></i>
                                 </a>
                             </div>
@@ -430,15 +439,15 @@
 
                             <div class="projects__data">
                                 <h3 class="projects__title">Heroes App</h3>
-                                <p class="project__description">Project built to tackle Angular knowledge from Udemy's course</p>
+                                <p data-i18n="projects.items.heroes.description" class="project__description">Project built to tackle Angular knowledge from Udemy's course</p>
                                 <a href="#" class="button button--flex button--small projects__button">
-                                    Demo
+                                    <span data-i18n="projects.demo">Demo</span>
                                     <i class="uit uit-angle-double-right button__icon"></i>
                                 </a>
                                 <a href="https://github.com/anambedoya/heroes-app" 
                                    target="_blank" 
                                    class="button button--flex button--small projects__button">
-                                    Code
+                                    <span data-i18n="projects.code">Code</span>
                                     <i class="uit uit-angle-double-right button__icon"></i>
                                 </a>
                             </div>
@@ -451,15 +460,15 @@
 
                             <div class="projects__data">
                                 <h3 class="projects__title">Login App</h3>
-                                <p class="project__description">Project built to tackle Angular and some Node knowledge from Udemy's course</p>
+                                <p data-i18n="projects.items.login.description" class="project__description">Project built to tackle Angular and some Node knowledge from Udemy's course</p>
                                 <a href="https://angular-node-auth-app.herokuapp.com/" class="button button--flex button--small projects__button" target="blank">
-                                    Demo
+                                    <span data-i18n="projects.demo">Demo</span>
                                     <i class="uit uit-angle-double-right button__icon"></i>
                                 </a>
                                 <a href="https://github.com/anambedoya/countries-app" 
                                    target="_blank" 
                                    class="button button--flex button--small projects__button">
-                                    Code
+                                    <span data-i18n="projects.code">Code</span>
                                     <i class="uit uit-angle-double-right button__icon"></i>
                                 </a>
                             </div>
@@ -539,8 +548,8 @@
         <!--==================== FOOTER ====================-->
         <footer class="footer">
             <div class="footer__bg">
-                <p class="footer__copy">&#169; Bedimcode. All rights reserved</p>
-                <p class="footer__copy">&#169; <a style="color: inherit" href="https://iconos8.es/" target="_blank">Iconos8.</a> All rights reserved</p>
+                <p class="footer__copy">&#169; Bedimcode. <span data-i18n="footer.rights">All rights reserved</span></p>
+                <p class="footer__copy">&#169; <a style="color: inherit" href="https://iconos8.es/" target="_blank">Iconos8.</a> <span data-i18n="footer.rights">All rights reserved</span></p>
             </div>
             
         </footer>
@@ -550,6 +559,7 @@
 
         <!--==================== SWIPER JS ====================-->
         <script src="assets/js/swiper-bundle.min.js"></script>
+        <script src="./node_modules/i18next/dist/umd/i18next.min.js"></script>
 
         <!--==================== MAIN JS ====================-->
         <script src="./assets/js/script.js"></script>
