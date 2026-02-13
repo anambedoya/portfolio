@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "engines": {
-    "node": ">=25.6.1"
+    "node": "24.x"
   },
   "scripts": {
     "start": "http-server . -p 3000 -c-1",
