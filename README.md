@@ -31,6 +31,16 @@ Personal portfolio website built with HTML, CSS, and JavaScript.
 
 ## Getting Started
 
+### Node Version
+
+This project targets **Node.js v25.6.1** (latest current release as of February 13, 2026).
+
+If you use `nvm`:
+
+```bash
+nvm use
+```
+
 ### 1. Install dependencies
 
 ```bash
