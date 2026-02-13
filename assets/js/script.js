@@ -15,7 +15,8 @@ const resources = {
                 home: 'Home',
                 about: 'About',
                 skills: 'Skills',
-                projects: 'Projects'
+                projects: 'Projects',
+                contact: 'Contact'
             },
             home: {
                 title: "Hi, I'm Ana Maria",
@@ -98,6 +99,22 @@ const resources = {
                     }
                 }
             },
+            contact: {
+                title: 'Contact Me',
+                subtitle: 'Open to freelance work',
+                description: 'If you are interested in working together, send me a message and I will get back to you soon.',
+                emailTitle: 'Email',
+                locationTitle: 'Location',
+                form: {
+                    nameLabel: 'Name',
+                    namePlaceholder: 'Your name',
+                    emailLabel: 'Email',
+                    emailPlaceholder: 'your@email.com',
+                    messageLabel: 'Message',
+                    messagePlaceholder: 'Tell me about your project...',
+                    send: 'Send message'
+                }
+            },
             footer: {
                 rights: 'All rights reserved'
             }
@@ -112,7 +129,8 @@ const resources = {
                 home: 'Inicio',
                 about: 'Sobre mí',
                 skills: 'Habilidades',
-                projects: 'Proyectos'
+                projects: 'Proyectos',
+                contact: 'Contacto'
             },
             home: {
                 title: 'Hola, soy Ana Maria',
@@ -195,6 +213,22 @@ const resources = {
                     }
                 }
             },
+            contact: {
+                title: 'Contáctame',
+                subtitle: 'Disponible para trabajo freelance',
+                description: 'Si te interesa trabajar conmigo, envíame un mensaje y te responderé pronto.',
+                emailTitle: 'Correo',
+                locationTitle: 'Ubicación',
+                form: {
+                    nameLabel: 'Nombre',
+                    namePlaceholder: 'Tu nombre',
+                    emailLabel: 'Correo',
+                    emailPlaceholder: 'tu@email.com',
+                    messageLabel: 'Mensaje',
+                    messagePlaceholder: 'Cuéntame sobre tu proyecto...',
+                    send: 'Enviar mensaje'
+                }
+            },
             footer: {
                 rights: 'Todos los derechos reservados'
             }
@@ -209,7 +243,8 @@ const resources = {
                 home: 'Accueil',
                 about: 'À propos',
                 skills: 'Compétences',
-                projects: 'Projets'
+                projects: 'Projets',
+                contact: 'Contact'
             },
             home: {
                 title: 'Bonjour, je suis Ana Maria',
@@ -292,6 +327,22 @@ const resources = {
                     }
                 }
             },
+            contact: {
+                title: 'Contactez-moi',
+                subtitle: 'Disponible pour des missions freelance',
+                description: 'Si vous souhaitez collaborer avec moi, envoyez-moi un message et je vous répondrai rapidement.',
+                emailTitle: 'E-mail',
+                locationTitle: 'Localisation',
+                form: {
+                    nameLabel: 'Nom',
+                    namePlaceholder: 'Votre nom',
+                    emailLabel: 'E-mail',
+                    emailPlaceholder: 'votre@email.com',
+                    messageLabel: 'Message',
+                    messagePlaceholder: 'Parlez-moi de votre projet...',
+                    send: 'Envoyer le message'
+                }
+            },
             footer: {
                 rights: 'Tous droits réservés'
             }
@@ -310,6 +361,11 @@ function applyTranslations() {
     document.querySelectorAll('[data-i18n]').forEach((element) => {
         const key = element.getAttribute('data-i18n');
         element.textContent = i18next.t(key);
+    });
+
+    document.querySelectorAll('[data-i18n-placeholder]').forEach((element) => {
+        const key = element.getAttribute('data-i18n-placeholder');
+        element.setAttribute('placeholder', i18next.t(key));
     });
 }
 
