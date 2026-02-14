@@ -10,6 +10,7 @@ Personal portfolio website built with HTML, CSS, and JavaScript.
 - Swiper.js
 - i18next (EN / ES / FR translations)
 - http-server (local development server)
+- Vercel Web Analytics (tracking and insights)
 
 ## Project Structure
 
@@ -94,6 +95,25 @@ Implementation details:
 - Main styles are in `assets/css/styles.css`.
 - The language selector style uses the `.language-select` class.
 - Theme colors are controlled by CSS variables in `:root`.
+
+## Vercel Web Analytics
+
+This portfolio includes Vercel Web Analytics for tracking visitors and page views.
+
+### How it works
+
+The analytics scripts are included in the `<head>` section of `index.html`:
+- A client-side script initializes the `window.va` function
+- The main tracking script is loaded from `/_vercel/insights/script.js`
+
+### Viewing analytics data
+
+Once deployed to Vercel:
+1. Visit your project in the [Vercel Dashboard](https://vercel.com/dashboard)
+2. Click on the **Analytics** tab
+3. View visitor metrics, page views, and other insights
+
+Note: Analytics data will only be collected when the site is deployed to Vercel. The tracking script (`/_vercel/insights/script.js`) is provided by Vercel's infrastructure.
 
 ## Notes
 
